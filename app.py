@@ -46,7 +46,7 @@ def handle_message(event):
         reply = 'not yet'    
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text= s))
+        TextSendMessage(text= reply))
 
 
 if __name__ == "__main__":
