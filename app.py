@@ -44,7 +44,7 @@ def handle_message(event):
         reply = 'Hello'
     elif msg == 'have you eaten?':
         reply = 'not yet' 
-    elif msg == ['who are you?', 'Who are you?']:
+    if msg in ['who are you?', 'Who are you?']:
         reply = "I'm your robot"
     elif 'reservation' in msg:
         reply = 'Do you want reservation?'
