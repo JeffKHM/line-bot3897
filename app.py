@@ -40,15 +40,15 @@ def handle_message(event):
     msg = event.message.text
     reply = 'very sorry, what do you mean?'
 
-    if 'give ma a sticker' in msg:
+    if 'give me a sticker' in msg:
         sticker_message = StickerSendMessage(
-            package_id='1',
-            sticker_id='1'
+            package_id='2',
+            sticker_id='23'
         )
 
         line_bot_api.reply_message(
             event.reply_token,
-            Sticker_message)
+            sticker_message)
         return
 
 
